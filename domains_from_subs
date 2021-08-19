@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "./domains_from_subs  <FILENAME>"
+cat $1|awk -F\. '{print $(NF-1) FS $NF}'
