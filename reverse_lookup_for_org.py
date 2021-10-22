@@ -1,4 +1,4 @@
-#python3.7 reverse_lookup.py Red+Bull+GmbH |sed 's/,/\n/g'|grep -vE '(^|[^0-9])[0-9]{4}-[0-9]{2}-[0-9]{2}($|[^0-9])'|sed 's/<td>//g'|cut -d/ -f1|egrep -v '\.<|<td w|Registrar<|Domain| MARKMONITOR'|sed 's/<//g'|egrep -v  '\. '|grep '\.'|awk NF
+#python3.7 reverse_lookup.py Red+Bull+GmbH |sed 's/,/\n/g'|grep -vE '(^|[^0-9])[0-9]{4}-[0-9]{2}-[0-9]{2}($|[^0-9])'|sed 's/<td>//g'|cut -d/ -f1|egrep -v '\.<|<td w|Registrar<|Domain| MARKMONITOR|GODADDY'|sed 's/<//g'|egrep -v  '\. '|grep '\.'|awk NF
 
 #!/usr/bin/python
 from bs4 import BeautifulSoup
