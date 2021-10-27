@@ -1,5 +1,5 @@
 #Usage
-#python3.7 rapiddns.py tesla.com|sed 's/,/\n/g'|grep tesla |sed 's/<td>//g'|sed 's\</td>\\g'|grep -v href
+#python3.7 rapiddns.py tesla.com|sed 's/,/\n/g'|grep tesla |sed 's/<td>//g'|sed 's\</td>\\g'|grep -v href|cut -d2-50
 #!/usr/bin/python
 from bs4 import BeautifulSoup
 import requests
